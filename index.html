@@ -5,66 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <meta name="description" content="" />
+    <meta name="description" content="portfolio of a web developer" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-      <div class="hero-section">
+    <!-- NAVIGATION STARTS -->
     <header>
-      <h1>My Portfolio</h1>
+      <h1><a href="/">My Portfolio</a></h1>
       <nav>
         <ul>
-          <li><a href="#my-skills">My Skills</a></li>
-          <li><a href="#my-work">My Work</a></li>
-          <li><a href="#about-mark">About Mark</a></li>
-          <li><a href="#get-in-touch">Get in Touch</a></li>
+          <li><a href="#about-me" class="underline">About Me</a></li>
+          <li><a href="#my-work" class="underline">My Work</a></li>
+          <li><a href="#get-in-touch" class="underline">Get in Touch</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <section>
-        <h1 class="display-heading">
-          Hello, I'm Mark Joseph .
+    <!-- END NAVIGATION -->
+
+    <!-- HERO START -->
+    <section class="hero">
+      <div class="hero-statement">
+        <h2>
+          <span id="hello">Hello, I'm</span> <br /><span id="name">
+            Mark Joseph.</span
+          >
           <br />
           <span class="neon-gradient">
             I am a <br />
             full stack<br />web developer.
           </span>
-        </h1>
-      </section>
-    </div>
-      <section id="my-skills"><h2>My Skills</h2></section>
-      <article>
-        <ul>
-          <li>HTML / CSS</li>
-          <li>Javascript</li>
-          <li>React.js</li>
-          <li>Node.js</li>
-          <li>Git / GitHub</li>
-          <li>Web / Server APIs</li>
-          <li>Product management</li>
-          <li>Marketing / SEO</li>
-        </ul>
-      </article>
-      <section id="my-work">
-        <h2>My Work</h2>
-        <div class="my-work-hero"></div>
-        <div class="my-work"></div>
-        <div class="my-work"></div>
-        <div class="my-work"></div>
-      </section>
-      <section id="about-mark">
-        <h2>About Mark</h2>
-        <address>
+        </h2>
+
+        <a href="#about-me" class="button">Let's connect</a>
+      </div>
+      <div id="mark-profile">
+        <img
+          src="/assets/images/mark-transparent-background.png"
+          alt="mark joseph standing and smiling with a peacoat"
+        />
+      </div>
+    </section>
+    <!-- HERO END -->
+
+    <main>
+      <section id="about-me" class="about section">
+        <article class="profile">
+          <h2 class="section-title">About <span> Mark</span></h2>
+
+          <p>
+            Mark is a contagiously energetic product & marketing executive. Mark
+            is passionate about delivering impactful user experiences and
+            finding unique and creative ways to cut through the noise and build
+            successful brands. He has a strong background in product, marketing,
+            and sales, and graduated with an MBA from George Fox University, in
+            Portland, Oregon. <br /><br />
+
+            Previously working as the Sr. Director of Brand & Marketing at
+            Glacier Media Inc., Mark co-founded a digital marketing agency that
+            specializes in demand generation and conversion optimization.<br /><br />
+
+            Mark's knowledge and experience in product and marketing have
+            established him as a leader within the industry and a sought-after
+            advisor. Mark is responsible at CareCru for the overall product and
+            brand, including corporate positioning, product roadmap, user
+            experience, voice of customer, product design, and the overall
+            customer and patient experience.
+          </p>
+        </article>
+        <article class="skills">
+          <h3>My <span>Skills</span></h3>
+
           <ul>
-            <li>Mark Joseph</li>
-            <li>Vancouver, BC</li>
-            <li>778 865 4451</li>
+            <li>HTML / CSS</li>
+            <li>Javascript</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Git / GitHub</li>
+            <li>Web / Server APIs</li>
+            <li>Product management</li>
+            <li>Express.js</li>
+            <li>DOM APIs</li>
+            <li>REST APIs</li>
+            <li>IdP/OAuth</li>
+            <li>MySQL</li>
+            <li>MERN Stack</li>
+            <li>Git / GitHub</li>
+            <li>Heroku</li>
+            <li>Netlify</li>
+            <li>product management</li>
           </ul>
-        </address>
+        </article>
       </section>
-      <section id="get-in-touch">
-        <h2>Get in touch</h2>
+      <section id="my-work" class="work section">
+        <h2 class="section-title">My Work</h2>
+        <div class="work-container">
+          <div id="work-1" class="my-work-hero">
+            <h3>Run Buddy</h3>
+          </div>
+          <div id="work-2" class="my-work"><h3>Coming soon 1</h3></div>
+          <div id="work-3" class="my-work"><h3>Coming soon 2</h3></div>
+          <div id="work-4" class="my-work"><h3>Coming soon 3</h3></div>
+        </div>
+        <
+      </section>
+
+      <!-- GET IN TOUCH START -->
+      <section id="get-in-touch" class="section">
+        <h2 class="section-title">Get in touch</h2>
         <form action="submit" method="POST">
           <ul>
             <li>
@@ -92,6 +139,9 @@
         </form>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <h2>❤️ Made with love by Mark J.</h2>
+    </footer>
+    <!-- footer end -->
   </body>
 </html>
