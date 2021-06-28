@@ -308,7 +308,7 @@ footer a {
       rgba(255, 0, 150, 0.3),
       rgba(255, 0, 150, 0.5)
     ),
-    url('/assets/images/run-buddy-work.jpg');
+    url('../images/run-buddy-work.jpg');
   background-size: cover;
   background-position: center;
   flex-grow: 3;
@@ -320,7 +320,7 @@ footer a {
       rgba(72, 0, 236, 0.5),
       rgba(255, 0, 150, 0.5)
     ),
-    url('/assets/images/work-2.jpg');
+    url('../images/work-2.jpg');
   background-size: cover;
   background-position: center;
   flex-grow: 1;
@@ -331,7 +331,7 @@ footer a {
       rgba(255, 0, 150, 0.3),
       rgba(255, 0, 150, 0.5)
     ),
-    url('/assets/images/work-3.jpg');
+    url('../images/work-3.jpg');
   background-size: cover;
   background-position: center;
   flex-grow: 1;
@@ -342,7 +342,7 @@ footer a {
       rgba(255, 0, 150, 0.5),
       rgba(72, 0, 236, 0.5)
     ),
-    url('/assets/images/work-4.jpg');
+    url('../images/work-4.jpg');
   background-size: cover;
   background-position: center;
   flex-grow: 1;
