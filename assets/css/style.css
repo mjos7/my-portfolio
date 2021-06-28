@@ -501,7 +501,7 @@ footer a {
 
   .hero img {
     margin-right: 0;
-    height: 400px;
+    height: 600px;
   }
 }
 
@@ -518,6 +518,10 @@ footer a {
   header {
     height: 150px;
   }
+  .hero img {
+    margin-right: 0;
+    height: 500px;
+  }
 }
 
 /* MEDIA 560px */
@@ -533,6 +537,11 @@ footer a {
   }
   .hero .button {
     width: 60%;
+  }
+
+  .hero img {
+    margin-right: 0;
+    height: 400px;
   }
 }
 
