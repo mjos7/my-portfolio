@@ -19,10 +19,7 @@ body {
 
 h2 {
   font-size: 40px;
-}
-
-h3 {
-  font-size: 30px;
+  color: white;
 }
 
 p,
@@ -38,6 +35,7 @@ li {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
 
   padding: 20px 35px;
@@ -84,23 +82,7 @@ header nav ul li a {
   color: var(--secondary-color);
 }
 
-/* #my-skills,
-#my-work,
-#about-mark,
-#connect {
-  padding-top: 250px;
-  margin-top: 250px;
-} */
-
 /* HEADER / NAV BAR END */
-
-/* MAIN START */
-
-/* main {
-  margin: 300px;
-} */
-
-/* MAIN END */
 
 /* FOOTER START */
 footer {
@@ -204,7 +186,7 @@ footer a {
   display: inline-block;
   margin-top: 50px;
   width: 50%;
-  padding: 10px 30px;
+  padding: 15px 25px;
   background-color: var(--primary-color);
   opacity: 0.7;
   border-radius: 10px;
@@ -220,7 +202,7 @@ footer a {
 }
 
 .hero img {
-  height: 600px;
+  height: 700px;
   margin-right: 20vh;
 }
 /* HERO END */
@@ -251,30 +233,24 @@ footer a {
 .about {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
   background-color: var(--primary-color);
   color: white;
 }
 
 .about .profile {
-  width: auto;
-  max-width: 55%;
-  margin-right: 150px;
-  flex-grow: 1;
+  width: 60%;
 }
 
 .about h2 span,
-.about h3 span,
+.work h2 span,
 .connect h2 span {
   color: var(--secondary-color);
 }
 
 .about p {
   line-height: 1.5;
-}
-
-.about .skills {
-  flex-grow: 3;
-  width: auto;
 }
 
 .about li {
@@ -290,25 +266,24 @@ footer a {
   flex-wrap: wrap;
 }
 
-.my-work-hero,
-.my-work {
-  margin-bottom: 3%;
+.work h2 {
+  color: var(--primary-color);
 }
 
 .my-work {
-  padding: 180px 150px;
+  padding: 100px;
   text-decoration: none;
+  margin: 10px 10px;
 }
 
 .my-work:nth-child(1) {
   width: 100%;
   padding: 200px 150px;
+  font-size: 2em;
 }
 
-.work,
-.about h2,
-.skills h3 {
-  margin-top: 100px;
+.my-work h3:nth-child(1) {
+  font-size: 1.5em;
 }
 
 .my-work h3 {
@@ -329,6 +304,7 @@ footer a {
     url('/assets/images/run-buddy-work.jpg');
   background-size: cover;
   background-position: center;
+  flex-grow: 3;
 }
 
 #work-2 {
@@ -340,6 +316,7 @@ footer a {
     url('/assets/images/work-2.jpg');
   background-size: cover;
   background-position: center;
+  flex-grow: 1;
 }
 #work-3 {
   background: linear-gradient(
@@ -350,6 +327,7 @@ footer a {
     url('/assets/images/work-3.jpg');
   background-size: cover;
   background-position: center;
+  flex-grow: 1;
 }
 #work-4 {
   background: linear-gradient(
@@ -360,38 +338,212 @@ footer a {
     url('/assets/images/work-4.jpg');
   background-size: cover;
   background-position: center;
+  flex-grow: 1;
 }
 
 .connect {
   background-color: var(--primary-color);
   color: white;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 .connect-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 100px auto;
+  margin: 100px 0 20px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   background-color: #000;
   color: white;
-  font-size: 50px;
+  font-size: 45px;
   text-decoration: none;
 }
 
 /* MEDIA QUERIES START */
 
+@media only screen and (max-width: 1600px) {
+  .section {
+    padding: 100px 250px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .section {
+    padding: 100px 150px;
+  }
+  .hero #hero-name {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .hero .button {
+    width: 100%;
+  }
+
+  .hero,
+  header {
+    background-position: 60%;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
+  .section {
+    padding: 100px 80px;
+  }
+  .hero img {
+    margin-right: 0;
+    height: 600px;
+  }
+
+  .hero,
+  header {
+    background-position: 30%;
+  }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 968px) {
+  .section {
+    padding: 100px 100px;
+  }
+
+  .section-title {
+    margin-bottom: 20px;
+  }
+
+  .hero,
+  header {
+    background-position: 35%;
+  }
+  header h1 {
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .about .profile {
+    width: 100%;
+    margin-bottom: 90px;
+  }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 780px) {
+  .section {
+    padding: 100px 50px;
+  }
+
+  header nav ul li a {
+    padding: 10px 10px;
+    font-size: 20px;
+  }
+
+  .hero,
+  header {
+    background-position: 15%;
+  }
+
+  .hero #hero-name {
+    font-size: 40px;
+  }
+
+  .hero-statement h2 {
+    font-size: 20px;
+  }
+
+  #hello {
+    color: #ffc576;
+    font-size: 20px;
+  }
+
+  .hero-statement {
+    margin-bottom: 36vh;
+    margin-left: 30px;
+  }
+
+  .hero .button {
+    display: inline-block;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .my-work:nth-child(1) {
+    padding: 120px 150px;
+    font-size: 1em;
+  }
+
+  .connect-item {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+
+  .hero img {
+    margin-right: 0;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  header {
+    justify-content: center;
+  }
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+  header {
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .hero {
+    justify-content: center;
+    text-align: center;
+  }
+  .hero-statement {
+    margin: 30px auto;
+    width: 100%;
+  }
+  .hero .button {
+    width: 60%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  .section {
+    padding: 100px 75px;
+  }
+
+  .hero img {
+    margin-right: 0;
+    height: 380px;
+  }
+  #mark-profile {
+    order: 0;
+  }
+
+  .hero,
+  .section,
+  .hero-statement,
+  .about,
+  .connect {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  header nav ul li a {
+    padding: 10px 10px;
+    font-size: 18px;
+  }
+  .connect-item {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+  }
 }
