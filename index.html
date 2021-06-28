@@ -7,16 +7,20 @@
     <title>My Portfolio</title>
     <meta name="description" content="portfolio of a web developer" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/c663089620.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- NAVIGATION STARTS -->
     <header>
-      <h1><a href="/">My Portfolio</a></h1>
+      <h1><a href="#">My Portfolio</a></h1>
       <nav>
         <ul>
           <li><a href="#about-me" class="underline">About Me</a></li>
           <li><a href="#my-work" class="underline">My Work</a></li>
-          <li><a href="#get-in-touch" class="underline">Get in Touch</a></li>
+          <li><a href="#connect" class="underline">Connect</a></li>
         </ul>
       </nav>
     </header>
@@ -26,7 +30,7 @@
     <section class="hero">
       <div class="hero-statement">
         <h2>
-          <span id="hello">Hello, I'm</span> <br /><span id="name">
+          <span id="hello">Hello, I'm</span> <br /><span id="hero-name">
             Mark Joseph.</span
           >
           <br />
@@ -73,7 +77,7 @@
           </p>
         </article>
         <article class="skills">
-          <h3>My <span>Skills</span></h3>
+          <h3 class="section-title">My <span>Skills</span></h3>
 
           <ul>
             <li>HTML / CSS</li>
@@ -89,58 +93,67 @@
             <li>IdP/OAuth</li>
             <li>MySQL</li>
             <li>MERN Stack</li>
-            <li>Git / GitHub</li>
             <li>Heroku</li>
             <li>Netlify</li>
-            <li>product management</li>
           </ul>
         </article>
       </section>
       <section id="my-work" class="work section">
         <h2 class="section-title">My Work</h2>
-        <div class="work-container">
-          <div id="work-1" class="my-work-hero">
-            <h3>Run Buddy</h3>
-          </div>
-          <div id="work-2" class="my-work"><h3>Coming soon 1</h3></div>
-          <div id="work-3" class="my-work"><h3>Coming soon 2</h3></div>
-          <div id="work-4" class="my-work"><h3>Coming soon 3</h3></div>
+        <div class="flex-container">
+          <a
+            href="https://mjos7.github.io/run-buddy/"
+            id="work-1"
+            class="my-work"
+          >
+            <h3>Run Buddy</h3></a
+          >
+          <a href="/" id="work-2" class="my-work">
+            <h3>Coming<br />soon</h3>
+          </a>
+          <a href="/" id="work-3" class="my-work">
+            <h3>Coming<br />soon</h3>
+          </a>
+          <a href="/" id="work-4" class="my-work">
+            <h3>Coming<br />soon</h3>
+          </a>
         </div>
-        <
       </section>
 
       <!-- GET IN TOUCH START -->
-      <section id="get-in-touch" class="section">
-        <h2 class="section-title">Get in touch</h2>
-        <form action="submit" method="POST">
-          <ul>
-            <li>
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" />
-            </li>
-            <li>
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" />
-            </li>
-            <li>
-              <label for="phone">Phone:</label>
-              <input type="tel" id="phone" name="phone" />
-            </li>
-            <li>
-              <label for="company-name">Company Name:</label>
-              <input type="text" id="company-name" name="company-name" />
-            </li>
-            <li>
-              <label for="message">Message:</label>
-              <textarea id="message" name="message"></textarea>
-            </li>
-            <button type="submit">Submit</button>
-          </ul>
-        </form>
+      <section id="connect" class="section connect">
+        <h2 class="section-title">Let's <span>Connect</span></h2>
+        <p>
+          View my work on GitHub, connect with me on LinkedIn or shoot me a note
+          via Email.
+        </p>
+        <div class="flex-container">
+          <a
+            class="connect-item"
+            target="_blank"
+            href="https://www.linkedin.com/in/markjnjoseph/"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            class="connect-item"
+            target="_blank"
+            href="https://github.com/mjos7"
+            ><i class="fab fa-github-alt"></i
+          ></a>
+          <a
+            class="connect-item"
+            target="_blank"
+            href="mailto:markjnjoseph@gmail.com"
+            ><i class="far fa-envelope"></i
+          ></a>
+          <a class="connect-item" href="#"
+            ><i class="fas fa-user-circle"></i
+          ></a>
+        </div>
       </section>
     </main>
     <footer>
-      <h2>❤️ Made with love by Mark J.</h2>
+      <h2>❤️ Made with love by Mark J. &copy; 2021</h2>
     </footer>
     <!-- footer end -->
   </body>
