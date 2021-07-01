@@ -586,4 +586,8 @@ footer a {
   .hero .button {
     display: none;
   }
+
+  .my-work {
+    margin: 0px -10px;
+  }
 }
