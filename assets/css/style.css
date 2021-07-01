@@ -489,7 +489,7 @@ footer a {
   }
 
   .my-work:nth-child(1) {
-    padding: 120px 150px;
+    padding: 120px 140px;
     font-size: 1em;
   }
 
@@ -588,6 +588,6 @@ footer a {
   }
 
   .my-work {
-    margin: 0px -10px;
+    margin: 10px 0px;
   }
 }
