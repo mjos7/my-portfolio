@@ -308,9 +308,9 @@ footer a {
       rgba(255, 0, 150, 0.3),
       rgba(255, 0, 150, 0.5)
     ),
-    url('../images/adventure-time-photo.png');
+    url('../images/adventure-time-photo.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   flex-grow: 3;
 }
 
@@ -320,7 +320,7 @@ footer a {
       rgba(72, 0, 236, 0.5),
       rgba(255, 0, 150, 0.5)
     ),
-    url('../images/run-buddy-work.jpg');
+    url('../images/pet-beauty-pageant-hero-img.png');
   background-size: cover;
   background-position: center;
   flex-grow: 1;
@@ -331,7 +331,7 @@ footer a {
       rgba(255, 0, 150, 0.3),
       rgba(255, 0, 150, 0.5)
     ),
-    url('../images/work-3.jpg');
+    url('../images/run-buddy-work.jpg');
   background-size: cover;
   background-position: center;
   flex-grow: 1;
